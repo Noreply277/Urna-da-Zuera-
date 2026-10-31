@@ -1,0 +1,94 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Urna Eletrônica Online</title>
+    <link rel="stylesheet" href="Urna css.css">
+</head>
+<body>
+
+    <main class="urna">
+
+        <header class="cabecalho">
+            <h1>URNA ELETRÔNICA</h1>
+            <p>Sistema de votação online</p>
+        </header>
+
+        <section class="tela">
+
+            <div class="informacoes">
+                <h2>SEU VOTO PARA</h2>
+                <h3 id="cargo">CANDIDATO</h3>
+
+                <div class="numero">
+                    <span id="digito1"></span>
+                    <span id="digito2"></span>
+                </div>
+
+                <div class="dados">
+                    <p>Nome: <span id="nome">---</span></p>
+                    <p>Partido: <span id="partido">---</span></p>
+                    <p>Número: <span id="numero">---</span></p>
+                </div>
+
+                <p id="mensagem"></p>
+            </div>
+
+            <div class="foto-candidato">
+                <img id="foto" src=""
+                     alt="Foto do candidato">
+                <p>Foto do candidato</p>
+            </div>
+
+        </section>
+
+        <section class="painel">
+
+            <div class="teclado">
+                <div class="linha">
+                    <button onclick="digitar(1)">1</button>
+                    <button onclick="digitar(2)">2</button>
+                    <button onclick="digitar(3)">3</button>
+                </div>
+
+                <div class="linha">
+                    <button onclick="digitar(4)">4</button>
+                    <button onclick="digitar(5)">5</button>
+                    <button onclick="digitar(6)">6</button>
+                </div>
+
+                <div class="linha">
+                    <button onclick="digitar(7)">7</button>
+                    <button onclick="digitar(8)">8</button>
+                    <button onclick="digitar(9)">9</button>
+                </div>
+
+                <div class="linha">
+                    <button onclick="digitar(0)">0</button>
+                </div>
+            </div>
+
+            <div class="acoes">
+                <button class="corrige" onclick="corrigir()">
+                    CORRIGE
+                </button>
+
+                <button class="confirma" onclick="confirmar()">
+                    CONFIRMA
+                </button>
+            </div>
+
+        </section>
+
+        <footer>
+            <p>ELEIÇÃO ONLINE - DEMONSTRAÇÃO</p>
+        </footer>
+
+    </main>
+
+    <script src="Urna js.js"></script>
+
+</body>
+</html>
